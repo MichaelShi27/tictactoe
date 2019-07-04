@@ -98,15 +98,15 @@ void playerOne() // Player One's turn
     cout << "Player One, please enter the row and column of the space you wish to take, separated by a space: ";
     cin >> row >> col;
 
-    while (row > 3 || row < 1 || col > 3 || col < 1) // Input validation
-    {
-        cout << "Please enter valid numbers! Try again: ";
-        cin >> row >> col;
-    }
-
     while (board[row - 1][col - 1] != '.') // Ensures that the space is free
     {
         cout << "That space is taken! Try again: ";
+        cin >> row >> col;
+    }
+    
+    while (row > 3 || row < 1 || col > 3 || col < 1) // Input validation
+    {
+        cout << "Please enter valid numbers! Try again: ";
         cin >> row >> col;
     }
 
@@ -120,15 +120,15 @@ void playerTwo() // Player Two's turn
     cout << "Player Two, please enter the row and column of the space you wish to take, separated by a space: ";
     cin >> row >> col;
 
-    while (row > 3 || row < 1 || col > 3 || col < 1) // Input validation
-    {
-        cout << "Please enter valid numbers! Try again: ";
-        cin >> row >> col;
-    }
-
     while (board[row - 1][col - 1] != '.') // Ensures that the space is free
     {
         cout << "That space is taken! Try again: ";
+        cin >> row >> col;
+    }
+
+    while (row > 3 || row < 1 || col > 3 || col < 1) // Input validation
+    {
+        cout << "Please enter valid numbers! Try again: ";
         cin >> row >> col;
     }
 
