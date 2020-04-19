@@ -13,8 +13,10 @@ A tie occurs when all of the locations on the board are full, but there is no wi
 #include <iomanip>
 using namespace std;
 
-char board[3][3] = { {'.', '.', '.'}, {'.', '.', '.'}, {'.', '.', '.'} }; // I used periods instead of asterisks
-                                                                          // because I like the look better.
+char board[3][3] = { {'.', '.', '.'},
+                     {'.', '.', '.'},   
+                     {'.', '.', '.'} }; 
+
 void displayBoard(); // Function prototypes
 bool checkWin();
 void playerOne();
